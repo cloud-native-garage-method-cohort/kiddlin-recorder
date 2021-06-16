@@ -10,7 +10,7 @@ spec:
     - name: deployment-name
       value: recorder
     - name: git-url
-      value: https://github.com/cloud-native-garage-method-cohort/squad5-api-repo.git
+      value: https://github.com/cloud-native-garage-method-cohort/kiddlin-recorder.git
     - name: IMAGE
       value: quay.io/kiddlin/recorder
   workspaces:
