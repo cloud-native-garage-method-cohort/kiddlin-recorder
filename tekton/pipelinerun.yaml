@@ -1,0 +1,33 @@
+<<<<<<< HEAD
+apiVersion: tekton.dev/v1alpha1
+kind: PipelineRun
+metadata:
+  generateName: recorder-pipilinerun-
+spec:
+  serviceAccountName: build-bot
+  pipelineRef:
+    name: recorder-pipiline
+  params:
+    - name: deployment-name
+      value: recorder
+    - name: git-url
+      value: https://github.com/cloud-native-garage-method-cohort/squad5-api-repo.git
+    - name: IMAGE
+      value: quay.io/kiddlin/recorder
+  workspaces:
+    - name: shared-workspace
+      persistentvolumeclaim:
+        claimName: kaidilin-tekton-pvc
+=======
+apiVersion: tekton.dev/v1beta1
+kind: PipelineRun
+metadata:
+  generateName: squad5-api-pipeline-run-
+spec:
+  pipelineRef:
+    name: squad5-api-pipeline
+  workspaces:
+    - name: pipeline-shared-data
+      persistentVolumeClaim:
+        claimName: squad5-pvc
+>>>>>>> 58128d4cea2b5d206b420fbff852f417e0c7926f
