@@ -15,13 +15,13 @@ spec:
       containers:
         - name: recorder
           image: quay.io/kiddlin/recorder
+          imagePullPolicy: Always
           ports:
             - containerPort: 5000
               protocol: TCP
           # env:
           #   - name: NAME
           #     value: VALUE
-          imagePullPolicy: Always
   strategy:
     type: RollingUpdate
     rollingUpdate:
