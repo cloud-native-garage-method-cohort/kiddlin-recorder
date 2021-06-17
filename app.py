@@ -19,7 +19,7 @@ app = Flask(__name__)
 
 @app.route('/', methods=['GET'])
 def index():
-    return 'Squad 5 API'
+    return 'Tekton Test'
 
 
 # @app.route('/search', methods=['POST'])
