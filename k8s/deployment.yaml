@@ -16,7 +16,7 @@ spec:
         - name: recorder
           image: quay.io/kiddlin/recorder
           ports:
-            - containerPort: 80
+            - containerPort: 5000
               protocol: TCP
           # env:
           #   - name: NAME

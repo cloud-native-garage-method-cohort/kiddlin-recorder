@@ -1,0 +1,15 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: TriggerBinding
+metadata:
+  name: recorder
+spec:
+  params:
+  - name: git-repo-url
+    value: $(body.repository.url)
+    # value: https://github.com/cloud-native-garage-method-cohort/kiddlin-recorder.git
+  - name: git-repo-name
+    value: $(body.repository.name)
+    # value: kiddlin-recorder
+  - name: git-revision
+    value: $(body.head_commit.id)
+    # value: main

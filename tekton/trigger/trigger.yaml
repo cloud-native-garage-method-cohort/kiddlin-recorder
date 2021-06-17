@@ -1,0 +1,10 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: Trigger
+metadata:
+  name: recorder-trigger
+spec:
+  serviceAccountName: build-bot
+  bindings:
+    - ref: recorder
+  template:
+    name: recorder

@@ -1,0 +1,8 @@
+apiVersion: triggers.tekton.dev/v1alpha1
+kind: EventListener
+metadata:
+  name: recorder
+spec:
+  serviceAccountName: build-bot
+  triggers:
+    - triggerRef: recorder-trigger
