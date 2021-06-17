@@ -5,11 +5,11 @@ metadata:
 spec:
   params:
   - name: git-repo-url
-    value: $(body.repository.url)
-    # value: https://github.com/cloud-native-garage-method-cohort/kiddlin-recorder.git
+    value: https://github.com/cloud-native-garage-method-cohort/kiddlin-recorder.git
+    #    value: $(body.repository.url)
   - name: git-repo-name
-    value: $(body.repository.name)
-    # value: kiddlin-recorder
+    value: recorder
+    #    value: $(body.repository.name)
   - name: git-revision
-    value: $(body.head_commit.id)
-    # value: main
+    value: main
+    #    value: $(body.head_commit.id)
