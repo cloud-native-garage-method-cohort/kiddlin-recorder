@@ -12,7 +12,7 @@ spec:
     - name: git-url
       value: https://github.com/cloud-native-garage-method-cohort/kiddlin-recorder.git
     - name: IMAGE
-      value: quay.io/kiddlin/recorder
+      value: quay.io/kiddlin/recorder:latest
   workspaces:
     - name: shared-workspace
       persistentvolumeclaim:
